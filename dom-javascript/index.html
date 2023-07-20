@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        
+    <title>DOM JavaScript</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+
+                <h1>DOM & JavaScript</h1>
+
+                <input type="text" class="form-control" id="hello-input">
+                <button 
+                    id="hello-button"
+                    class="btn btn-primary btn-lg mt-2"
+                    onclick="sayHello()">
+                    Say Hello
+                </button>
+
+                <button 
+                    class="btn btn-secondary btn-lg mt-2"
+                    id="change-button"
+                    onclick="toggle_button_color()">Change Color</button>
+                
+                <h2 id="hello-area" class="mt-5">
+                    Hello friend
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script>
+
+// document.addEventListener("DOMContentLoaded", () => {
+  
+
+
+
+// });
+
+// function sayHello() {
+//     var hello_name = document.getElementById('hello-input').value;
+
+//     var hello_phrase = 'Hello '+hello_name.trim();
+//     if(hello_name.trim() == '') {
+//         hello_phrase = 'Hello friend';
+//     } 
+
+//     document.getElementById('hello-area').innerHTML = hello_phrase;
+//     document.getElementById('hello-input').value = '';
+// }
+
+// function toggle_button_color() {
+//     var btn = document.getElementById('hello-button');
+
+//     if (btn.classList.contains('btn-primary')) {
+//         btn.classList.remove('btn-primary')
+//         btn.classList.add('btn-danger')
+//     } else {
+//         btn.classList.add('btn-primary')
+//         btn.classList.remove('btn-danger')
+//     }
+// }
+
+</script>
+</html>
